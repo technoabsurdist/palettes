@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herdora Color Palette </title>
+    <title>Herdora Circuit Slate Palette</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #FAFAFA;
-            color: #0A0A0A;
+            background-color: #F0F0F0;
+            color: #3B4656;
             margin: 0;
             padding: 40px;
             min-height: 100vh;
@@ -24,11 +24,11 @@
             margin-bottom: 16px;
             font-weight: 300;
             letter-spacing: -0.02em;
-            color: #0A0A0A;
+            color: #3B4656;
         }
         
         .subtitle {
-            color: #666;
+            color: #5F6A78;
             margin-bottom: 40px;
             font-size: 1.1rem;
         }
@@ -40,7 +40,7 @@
         .section-title {
             font-size: 1.3rem;
             margin-bottom: 24px;
-            color: #333;
+            color: #3B4656;
             font-weight: 400;
         }
         
@@ -56,13 +56,13 @@
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.2s ease;
-            border: 1px solid #F0F0F0;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid #B4BAC1;
+            box-shadow: 0 2px 8px rgba(59, 70, 86, 0.04);
         }
         
         .color-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 16px rgba(59, 70, 86, 0.08);
         }
         
         .color-swatch {
@@ -81,25 +81,25 @@
             font-size: 1rem;
             font-weight: 500;
             margin-bottom: 6px;
-            color: #0A0A0A;
+            color: #3B4656;
         }
         
         .color-hex {
             font-family: 'Monaco', 'Consolas', monospace;
             font-size: 0.85rem;
-            color: #666;
+            color: #5F6A78;
             margin-bottom: 4px;
         }
         
         .color-desc {
             font-size: 0.8rem;
-            color: #888;
+            color: #5F6A78;
             line-height: 1.4;
         }
         
         .demo-section {
             background: #FFFFFF;
-            border: 1px solid #F0F0F0;
+            border: 1px solid #B4BAC1;
             border-radius: 16px;
             padding: 40px;
             margin-bottom: 40px;
@@ -113,15 +113,15 @@
         }
         
         .demo-card {
-            background: #FAFAFA;
-            border: 1px solid #F0F0F0;
+            background: #F0F0F0;
+            border: 1px solid #B4BAC1;
             border-radius: 12px;
             padding: 24px;
         }
         
         .demo-card h3 {
             margin-bottom: 16px;
-            color: #333;
+            color: #3B4656;
             font-weight: 400;
         }
         
@@ -143,43 +143,42 @@
         }
         
         .btn-primary {
-            background: #525252;
+            background: #3B4656;
             color: #FFFFFF;
         }
         
         .btn-primary:hover {
-            background: #404040;
+            background: #2C3441;
         }
         
         .btn-secondary {
             background: #FFFFFF;
-            color: #333;
-            border: 1px solid #E0E0E0;
+            color: #5F6A78;
+            border: 1px solid #B4BAC1;
         }
         
         .btn-secondary:hover {
-            background: #FAFAFA;
-            border-color: #CCC;
+            background: #F0F0F0;
+            border-color: #5F6A78;
+        }
+        
+        .btn-accent {
+            background: #A7F9FF;
+            color: #3B4656;
+        }
+        
+        .btn-accent:hover {
+            background: #90E8EF;
         }
         
         .btn-ghost {
             background: transparent;
-            color: #525252;
+            color: #5F6A78;
             border: none;
         }
         
         .btn-ghost:hover {
-            background: #F5F5F5;
-        }
-        
-        .btn-klein {
-            background: #002FA7;
-            color: #FFFFFF;
-            border: none;
-        }
-        
-        .btn-klein:hover {
-            background: #002080;
+            background: #F0F0F0;
         }
         
         .text-examples p {
@@ -187,27 +186,28 @@
         }
         
         .primary-text {
-            color: #0A0A0A;
+            color: #3B4656;
         }
         
         .secondary-text {
-            color: #666;
+            color: #5F6A78;
         }
         
         .muted-text {
-            color: #999;
+            color: #B4BAC1;
         }
         
         .accent-text {
-            color: #525252;
+            color: #00A5B5;
+            font-weight: 500;
         }
         
         .form-example input {
             background: #FFFFFF;
-            border: 1px solid #E0E0E0;
+            border: 1px solid #B4BAC1;
             padding: 10px 16px;
             border-radius: 6px;
-            color: #0A0A0A;
+            color: #3B4656;
             width: 100%;
             margin-bottom: 12px;
             transition: all 0.2s ease;
@@ -215,13 +215,13 @@
         
         .form-example input:focus {
             outline: none;
-            border-color: #525252;
-            box-shadow: 0 0 0 3px rgba(82, 82, 82, 0.1);
+            border-color: #A7F9FF;
+            box-shadow: 0 0 0 3px rgba(167, 249, 255, 0.2);
         }
         
         .navbar-example {
             background: #FFFFFF;
-            border: 1px solid #F0F0F0;
+            border: 1px solid #B4BAC1;
             border-radius: 8px;
             padding: 16px 24px;
             display: flex;
@@ -236,27 +236,22 @@
         }
         
         .nav-links a {
-            color: #666;
+            color: #5F6A78;
             text-decoration: none;
             transition: color 0.2s ease;
         }
         
         .nav-links a:hover {
-            color: #525252;
+            color: #3B4656;
         }
         
-        .link-klein {
-            color: #002FA7;
-            text-decoration: none;
-        }
-        
-        .link-klein:hover {
-            text-decoration: underline;
+        .nav-links a.active {
+            color: #00A5B5;
         }
         
         .card-example {
             background: #FFFFFF;
-            border: 1px solid #F0F0F0;
+            border: 1px solid #B4BAC1;
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 16px;
@@ -264,12 +259,12 @@
         
         .card-example h4 {
             margin: 0 0 8px 0;
-            color: #0A0A0A;
+            color: #3B4656;
         }
         
         .card-example p {
             margin: 0;
-            color: #666;
+            color: #5F6A78;
         }
         
         .copied {
@@ -277,7 +272,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(59, 70, 86, 0.9);
             color: white;
             padding: 8px 16px;
             border-radius: 4px;
@@ -291,188 +286,173 @@
             opacity: 1;
         }
         
-        .logo-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #F0F0F0;
+        .usage-guidelines {
+            background: #F0F0F0;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
         }
         
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        .usage-guidelines h3 {
+            color: #3B4656;
+            margin-bottom: 16px;
         }
         
-        .logo-svg {
-            width: 60px;
-            height: auto;
+        .usage-guidelines ul {
+            color: #5F6A78;
+            line-height: 1.8;
+            padding-left: 20px;
         }
         
-        .download-btn {
-            background: #525252;
-            color: #FFFFFF;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-weight: 500;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .download-btn:hover {
-            background: #404040;
-            transform: translateY(-1px);
+        .usage-guidelines strong {
+            color: #3B4656;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo-header">
-            <div class="logo-container">
-                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1323" height="1427">
-                    <clipPath id="cl_3">
-                        <path d="M0.338745 6.10352e-05L1322.79 0.313354L1322.46 1427.3L0.000671387 1426.99L0.338745 6.10352e-05Z"/>
-                    </clipPath>
-                    <g clip-path="url(#cl_3)">
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M541.816 821.72C563.297 830.225 582.455 844.517 602.44 855.937C636.709 875.518 672.387 893.676 705.2 915.656C705.417 920.592 706.303 925.627 706.868 930.546C704.449 940.928 705.752 953.94 706.786 964.454C707.077 976.199 705.529 987.953 705.692 999.697C705.98 1020.49 711.596 1106.73 705.331 1119.73C704.849 1120.73 704.197 1121.8 703.052 1122.03C698.787 1122.91 692.364 1119.33 688.591 1117.41C674.346 1110.12 660.594 1101.33 646.691 1093.36L543.223 1033.08L441.108 973.126C414.599 957.644 387.782 942.605 362.02 925.887C395.018 905.383 429.312 886.57 462.883 866.982C488.859 851.824 514.829 834.979 541.816 821.72ZM663.683 1072.05C666.652 1073.61 669.136 1074.65 672.484 1073.57C675.45 1072.61 677.418 1070.14 678.647 1067.38C681.347 1061.32 681.492 1051.6 678.922 1045.48C677.326 1041.68 674.015 1038.86 670.709 1036.55C659.974 1029.06 647.69 1022.81 636.376 1016.15C607.377 999.275 578.295 982.551 549.127 965.972C527.398 953.46 506.322 939.869 484.431 927.621C474.648 922.148 464.579 916.262 454.044 912.364C451.44 911.401 449.28 910.837 446.507 911.042C439.647 913.749 429.104 917.351 425.926 924.702C424.882 927.119 425.111 929.14 425.976 931.555C437.367 942.736 455.028 950.948 468.841 958.976L526.111 992.252L616.541 1044.78C632.214 1053.89 647.668 1063.57 663.683 1072.05ZM512.989 872.616C533.269 887.861 559.197 901.455 581.228 914.32C605.846 928.693 631.209 944.847 656.876 956.987C661.939 959.806 667.874 963.804 673.985 962.327C676.196 961.774 678.08 960.328 679.187 958.336C682.656 952.139 680.816 939.925 678.742 933.349C678.568 932.801 678.382 932.256 678.185 931.716C666.084 920.084 634.467 904.67 619.151 895.789C598.728 883.946 578.951 870.642 557.718 860.262C552.772 857.844 548.342 855.896 542.837 855.195C531.974 859.152 521.163 864.28 512.989 872.616Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M699.99 312.029C700.097 312.018 700.202 311.994 700.309 311.993C702.32 311.973 702.627 311.838 704.092 313.121C707.248 321.005 705.342 385.146 705.333 398.418L705.308 519.826C678.82 536.924 650.553 551.796 623.234 567.522C596.532 582.893 570.541 599.292 542.977 613.126C527.456 606.202 513.177 596.577 498.566 587.956L431.904 549.166C408.265 535.919 384.999 522.019 362.131 507.481C384.397 491.655 409.617 479.033 433.288 465.426L555.326 394.872C583.761 378.407 612.095 361.768 640.325 344.959C659.644 333.512 679.121 320.457 699.99 312.029ZM430.505 498.079C428.841 502.083 427.542 505.643 429.337 509.848C431.87 515.785 438.665 518.819 444.075 521.592L450.618 523.701C465.511 518.452 478.465 509.107 491.967 501.116L545.277 469.982L626.495 423.147C640.713 414.98 655.533 407.414 669.219 398.394C672.591 396.17 674.952 393.905 676.672 390.206C679.348 384.454 680.551 375.313 678.362 369.282C677.373 366.553 675.971 364.237 673.336 362.849C671.552 361.908 668.322 362.118 666.335 362.044C649.258 368.613 632.729 380.276 616.959 389.596L551.712 427.324L471.84 473.335C458.248 481.145 442.637 488.193 430.505 498.079ZM529.92 575.365C534.559 577.856 540.244 582.157 545.711 580.458C556.807 577.01 568.306 569.192 578.54 563.521C597.987 552.71 617.25 541.569 636.319 530.102C650.033 521.883 663.978 513.744 676.763 504.116C678.701 496.361 683.228 478.776 678.682 471.577C677.635 469.919 676.29 468.988 674.31 468.695C674.09 468.662 673.869 468.662 673.648 468.646C647.29 483.141 621.695 498.822 595.68 513.904C579.899 523.053 527.097 550.087 517.734 561.378C517.373 563.723 517.52 565.419 518.967 567.398C521.676 571.105 525.978 573.231 529.92 575.365Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M891.178 821.447C900.683 824.378 930.203 844.1 941.154 850.622L1070.12 927.176C1054.98 936.776 1038.72 945.142 1023.29 954.354L843.193 1059.97L791.249 1090.51C777.653 1098.59 745.057 1121.55 731.193 1123.44C730.237 1123.1 729.294 1122.96 728.607 1122.15C726.371 1119.52 726.561 1112.79 726.441 1109.43C725.628 1086.92 727.052 1064.16 727.054 1041.61C727.059 999.792 726.253 957.829 727.198 916.031C747.379 900.655 771.444 889.261 793.442 876.747C825.986 858.234 858.041 838.911 891.178 821.447ZM754.681 1043.65C753.514 1051.07 750.863 1063.24 755.606 1069.79C756.966 1071.67 758.959 1072.87 761.275 1073.11C766.73 1073.67 771.837 1070.37 776.276 1067.6C832.117 1033.92 888.916 1001.93 945.17 968.957C961.97 959.111 996.31 943.321 1008.31 930.041C1004.37 921.853 999.065 915.195 990.189 912.044C986.612 910.784 982.782 910.417 979.03 910.978L825.281 1000.58L787.74 1022.43C776.714 1028.81 764.081 1034.95 754.681 1043.65ZM753.879 931.377C752.931 939.158 749.851 952.679 754.611 959.394C755.744 960.993 757.453 962.005 759.379 962.276C764.672 963.024 770.472 959.276 774.828 956.611C794.676 944.151 909.742 881.229 913.721 872.21C913.612 869.347 912.473 867.71 910.388 865.882C903.596 859.933 894.03 856.366 885.247 854.993C859.51 868.443 834.772 883.748 809.549 898.122C791.263 908.542 769.817 917.544 753.879 931.377Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M728.818 311.013C737.276 312.448 745.189 317.148 752.643 321.205C763.816 327.287 774.419 334.498 785.284 341.117C803.762 352.194 822.303 363.162 840.907 374.026L1069.21 507.013C1047.28 520.964 1025.03 534.425 1002.5 547.389C964.932 568.934 928.353 591.98 890.375 612.856C870.461 604.817 851.892 591.627 833.259 580.954C797.837 560.662 761.832 541.082 727.245 519.398L727.068 393.125C726.94 370.719 723.975 331.688 728.818 311.013ZM992.557 518.14C997.127 515.824 1003.04 513.113 1004.97 507.969C1005.88 505.542 1005.34 503.664 1004.35 501.423C991.322 489.935 975.225 481.94 960.17 473.427C943.584 464.078 927.06 454.619 910.599 445.05L822.901 393.683C806.21 383.888 789.715 373.529 772.55 364.588C768.857 362.665 765.595 361.445 761.441 360.926C756.654 364.257 754.938 367.365 753.949 373.161C752.916 379.215 753.612 388.121 757.376 393.248C760.849 397.98 769.022 402.021 774.056 405.105C808.999 426.522 845.315 446.072 880.821 466.58C909.852 483.348 938.425 501.507 967.968 517.29C971.542 519.201 975.301 521.546 979.408 521.939C984.09 522.39 988.522 520.291 992.557 518.14ZM888.517 580.759C894.603 578.827 900.246 576.332 905.793 573.165C909.05 571.313 915.104 568.58 916.201 564.698C916.545 563.478 916.545 561.842 915.658 560.856C905.884 549.993 853.312 523.497 837.459 514.322C819.941 504.185 802.769 493.457 785.214 483.381C776.202 478.208 766.872 472.326 757.088 468.752C756.338 468.478 755.596 468.195 754.842 467.931C752.277 478.681 750.247 493.677 756.28 503.631C762.611 514.076 814.233 540.44 827.18 547.88C840.87 555.746 854.249 564.323 868.233 571.652C874.764 575.074 881.506 578.443 888.517 580.759Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M345.776 523.969C372.985 535.738 402.814 556.277 428.864 571.637C464.135 592.432 500.229 611.524 534.577 633.878C535.295 656.062 534.64 678.253 534.698 700.447C534.979 733.709 534.952 766.973 534.615 800.234C524.737 808.277 513.294 813.631 502.241 819.808C490.226 826.592 478.269 833.479 466.373 840.467C426.561 863.908 385.849 886.077 345.532 908.652C346.348 780.44 344.358 652.17 345.776 523.969ZM371.622 582.584C369.671 632.946 370.877 683.747 370.932 734.16L370.992 799.651C370.974 811.435 370.41 823.386 371.044 835.148C371.272 839.366 371.226 847.159 374.111 850.422C376.515 853.139 379.64 854.59 383.26 854.667C388.35 854.776 393.066 852.637 397.367 850.116C401.95 846.903 407.297 843.935 408.408 837.951C410.231 828.123 408.941 816.238 408.79 806.207C408.626 791.315 408.573 776.421 408.632 761.528L408.689 655.603C408.728 635.906 410.213 615.27 407.736 595.743C407.076 590.537 403.37 587.155 399.34 584.14C393.385 579.689 386.391 576.063 378.851 575.805C376.261 577.953 373.861 580.053 371.622 582.584ZM494.404 792.753C499.761 789.066 504.344 785.412 508.544 780.426L508.678 701.288C508.718 684.915 510.384 667.338 507.314 651.207C497.347 641.432 485.819 633.194 472.484 628.721C471.101 634.109 470.708 639.561 470.442 645.097C469.509 664.459 468.893 794.46 472.396 802.788C476.029 803.845 479.656 801.873 482.845 800.121C486.838 797.928 490.664 795.348 494.404 792.753Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M1083.12 528.253C1083.75 528.137 1084.54 528.214 1085.19 528.216C1086.92 530.378 1086.37 535.642 1086.42 538.398C1086.65 552.22 1086.17 566.095 1086.19 579.927L1086.08 696.134L1085.95 908.437C1067.59 901.647 1051.46 890.179 1034.68 880.325L967.323 841.159C943.839 827.54 918.659 814.881 896.806 798.803C897.763 778.405 897.097 758.095 897.062 737.689L897.093 634.004C907.417 626.31 918.76 620.221 929.877 613.777L974.571 587.846C990.11 578.852 1005.6 569.768 1021.03 560.595C1041.15 548.632 1061.07 536.398 1083.12 528.253ZM1022.46 839.061C1027.61 844.811 1032.96 848.602 1039.77 852.189C1043.89 854.415 1048.48 856.625 1053.26 855.196C1055.11 854.642 1057.67 852.921 1058.58 851.19C1060.5 847.534 1060.44 839.596 1060.59 835.472C1062 797.683 1060.68 759.443 1060.69 721.603L1060.71 639.192C1060.72 624.691 1061.09 610.092 1060.66 595.603C1060.55 591.967 1060.79 586.949 1059.3 583.576C1058.22 581.125 1056.35 579.203 1053.8 578.32C1050.97 577.346 1047.97 577.658 1045.05 577.892C1038.7 580.978 1026.32 585.547 1023.91 592.604C1020.09 603.822 1019.73 814.059 1022.46 839.061ZM924.271 651.103L923.931 733.716C923.826 749.482 922.459 765.806 924.519 781.452C928.669 785.637 932.708 789.372 937.882 792.287C945.43 796.646 952.925 801.106 960.77 804.918L961.372 693.857C961.424 675.536 962.275 656.896 961.354 638.617C961.235 636.259 961.224 632.312 959.816 630.367C959.654 630.145 959.427 629.978 959.232 629.784C946.522 633.721 934.12 642.289 924.271 651.103Z"/>
-                        <path transform="matrix(1.65929 0.000393092 -0.000393092 1.65929 -527.203 -476.342)" d="M706.868 930.546C708.509 940.794 708.268 954.177 706.786 964.454C705.752 953.94 704.449 940.928 706.868 930.546Z"/>
-                    </g>
-                </svg>
-                <div>
-                    <h1 style="margin: 0; font-size: 2.5rem; font-weight: 300; letter-spacing: -0.02em; color: #0A0A0A;">Herdora Color Palette</h1>
-                </div>
-            </div>
-        </div>
+        <h1>Herdora Circuit Slate</h1>
+        <p class="subtitle">Pulled straight from computational infrastructure – minimal, precise, purposeful</p>
         
         <div class="section">
             <h2 class="section-title">Core Palette</h2>
             <div class="palette">
                 <div class="color-card">
-                    <div class="color-swatch" style="background-color: #FAFAFA;" data-color="#FAFAFA">
+                    <div class="color-swatch" style="background-color: #3B4656;" data-color="#3B4656">
                         <span class="copied">Copied!</span>
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Pure Base</div>
-                        <div class="color-hex">#FAFAFA</div>
-                        <div class="color-desc">Primary background</div>
+                        <div class="color-name">Night-Slate</div>
+                        <div class="color-hex">#3B4656</div>
+                        <div class="color-desc">Primary dark – headers, strokes, UI chrome</div>
                     </div>
                 </div>
                 
                 <div class="color-card">
-                    <div class="color-swatch" style="background-color: #FFFFFF;" data-color="#FFFFFF">
+                    <div class="color-swatch" style="background-color: #5F6A78;" data-color="#5F6A78">
                         <span class="copied">Copied!</span>
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Pure White</div>
-                        <div class="color-hex">#FFFFFF</div>
-                        <div class="color-desc">Cards, elevated surfaces</div>
+                        <div class="color-name">Steel-Graphite</div>
+                        <div class="color-hex">#5F6A78</div>
+                        <div class="color-desc">Mid-tone – body text, icons, secondary buttons</div>
                     </div>
                 </div>
                 
                 <div class="color-card">
-                    <div class="color-swatch" style="background-color: #0A0A0A;" data-color="#0A0A0A">
+                    <div class="color-swatch" style="background-color: #B4BAC1;" data-color="#B4BAC1">
                         <span class="copied">Copied!</span>
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Deep Black</div>
-                        <div class="color-hex">#0A0A0A</div>
-                        <div class="color-desc">Primary text</div>
+                        <div class="color-name">Cloud-Mist</div>
+                        <div class="color-hex">#B4BAC1</div>
+                        <div class="color-desc">Light neutral – cards, inputs, dividers</div>
                     </div>
                 </div>
                 
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #525252;" data-color="#525252">
-                        <span class="copied">Copied!</span>
-                    </div>
-                    <div class="color-info">
-                        <div class="color-name">Tungsten</div>
-                        <div class="color-hex">#525252</div>
-                        <div class="color-desc">Primary accent</div>
-                    </div>
-                </div>
-                
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #002FA7;" data-color="#002FA7">
-                        <span class="copied">Copied!</span>
-                    </div>
-                    <div class="color-info">
-                        <div class="color-name">Klein Blue</div>
-                        <div class="color-hex">#002FA7</div>
-                        <div class="color-desc">Highlight accent</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Supporting Colors</h2>
-            <div class="palette">
                 <div class="color-card">
                     <div class="color-swatch" style="background-color: #F0F0F0;" data-color="#F0F0F0">
                         <span class="copied">Copied!</span>
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Light Gray</div>
+                        <div class="color-name">Frost-White</div>
                         <div class="color-hex">#F0F0F0</div>
-                        <div class="color-desc">Subtle borders</div>
+                        <div class="color-desc">Base – page background, negative space</div>
                     </div>
                 </div>
                 
                 <div class="color-card">
-                    <div class="color-swatch" style="background-color: #666666;" data-color="#666666">
+                    <div class="color-swatch" style="background-color: #A7F9FF;" data-color="#A7F9FF">
                         <span class="copied">Copied!</span>
                     </div>
                     <div class="color-info">
-                        <div class="color-name">Gray 600</div>
-                        <div class="color-hex">#666666</div>
-                        <div class="color-desc">Secondary text</div>
-                    </div>
-                </div>
-                
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #333333;" data-color="#333333">
-                        <span class="copied">Copied!</span>
-                    </div>
-                    <div class="color-info">
-                        <div class="color-name">Gray 800</div>
-                        <div class="color-hex">#333333</div>
-                        <div class="color-desc">Headings</div>
-                    </div>
-                </div>
-                
-                <div class="color-card">
-                    <div class="color-swatch" style="background-color: #E3EEFF;" data-color="#E3EEFF">
-                        <span class="copied">Copied!</span>
-                    </div>
-                    <div class="color-info">
-                        <div class="color-name">Klein Blue Tint</div>
-                        <div class="color-hex">#E3EEFF</div>
-                        <div class="color-desc">Info backgrounds</div>
+                        <div class="color-name">Spark-Cyan</div>
+                        <div class="color-hex">#A7F9FF</div>
+                        <div class="color-desc">Accent – CTAs, active states, data highlights</div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="demo-section" style="margin-top: 40px; padding: 30px; background: #F5F5F5;">
-            <h2 class="section-title" style="color: #333;">The Brutalist Engineering Aesthetic</h2>
+        <div class="demo-section">
+            <h2 class="section-title">Circuit Slate in Action</h2>
+            
+            <div class="navbar-example">
+                <div style="font-weight: 500; color: #3B4656;">HERDORA</div>
+                <div class="nav-links">
+                    <a href="#">Products</a>
+                    <a href="#">Documentation</a>
+                    <a href="#" class="active">Compute</a>
+                    <a href="#">About</a>
+                </div>
+                <button class="btn btn-accent">Get Started</button>
+            </div>
+            
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Button Hierarchy</h3>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Deploy</button>
+                        <button class="btn btn-secondary">Save Draft</button>
+                        <button class="btn btn-accent">Optimize</button>
+                        <button class="btn btn-ghost">Cancel</button>
+                    </div>
+                    <p class="secondary-text">Spark-Cyan used sparingly for maximum impact</p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Typography Scale</h3>
+                    <div class="text-examples">
+                        <p class="primary-text" style="font-size: 1.2rem; font-weight: 500;">Night-Slate Headers</p>
+                        <p class="secondary-text">Steel-Graphite body text provides comfortable reading on Frost-White backgrounds.</p>
+                        <p>Active: <span class="accent-text">2 instances running</span></p>
+                        <p class="muted-text">Cloud-Mist for timestamps • 5 min ago</p>
+                    </div>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Form Elements</h3>
+                    <div class="form-example">
+                        <input type="text" placeholder="Enter compute units...">
+                        <input type="text" placeholder="API key..." value="herdora_live_123">
+                    </div>
+                    <p class="secondary-text">Focus states use Spark-Cyan glow</p>
+                </div>
+                
+                <div class="demo-card">
+                    <h3>Data Highlights</h3>
+                    <div class="card-example">
+                        <h4>Compute Instance</h4>
+                        <p>8 vCPUs • 32 GB RAM • <span style="color: #00A5B5;">●</span> Running</p>
+                    </div>
+                    <div class="card-example" style="border-left: 3px solid #A7F9FF;">
+                        <h4>Optimized Instance</h4>
+                        <p>16 vCPUs • 64 GB RAM • <span class="accent-text">+45% faster</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="usage-guidelines">
+            <h3>Usage Guidelines</h3>
+            <ul>
+                <li><strong>Keep it minimal:</strong> The four greys run the whole UI; cyan is the only pop</li>
+                <li><strong>Accessibility:</strong> Night-Slate on Frost-White hits WCAG AA; Steel-Graphite on Frost-White works for small labels</li>
+                <li><strong>Hierarchy:</strong> Background: Frost-White → Cloud-Mist for raised surfaces | Content: Steel-Graphite text, Night-Slate titles | Borders: Cloud-Mist at 1px</li>
+                <li><strong>Accent restraint:</strong> Limit Spark-Cyan to ~5% of pixels on any screen – keeps it elegant, not toyish</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section" style="margin-top: 40px; background: #F0F0F0;">
+            <h2 class="section-title" style="color: #3B4656;">The Circuit Slate Philosophy</h2>
             <p class="secondary-text" style="margin-bottom: 20px;">
-                <strong>Tungsten (#525252)</strong> grounds the palette with industrial strength. As the densest element, it embodies computational density and reliability - drawing attention through weight rather than brightness. This creates a unique visual hierarchy that feels substantial and trustworthy.
+                This palette emerges directly from computational infrastructure – the deep slate of server towers, the graphite of circuit boards, the mist of cooling systems, and that singular spark of cyan energy that brings it all to life.
             </p>
             <p class="secondary-text" style="margin-bottom: 20px;">
-                <strong>Klein Blue (#002FA7)</strong> Yves Klein's impossible blue brings artistic precision to brutalist architecture. Used sparingly for links, highlights, and special information, it creates moments of intense focus without overwhelming the industrial foundation. It brings in the "techno" in the techno-brutalist aura we aim to portray. 
+                <strong>Zero fluff, maximum function.</strong> Four greys create the entire hierarchy. One cyan accent provides all the energy you need. This restraint forces clarity in design decisions and ensures every pixel serves a purpose.
+            </p>
+            <p class="secondary-text">
+                The result is a system that feels both brutalist and refined – raw computational power expressed through precise, minimal design. It's infrastructure made beautiful through honest expression of function.
             </p>
         </div>
     </div>
